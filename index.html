@@ -1,0 +1,597 @@
+
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>sea</title>
+     <style>
+body {
+    background-color: #070820;
+}
+
+.moon{ 
+    position: relative; 
+    left:50px; 
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%; 
+    background:transparent; 
+    transform: rotateY(180deg); 
+    box-shadow: 20px 20px 0 0 #f5f3ce; 
+}
+.star{ 
+            height: 3px; 
+            width:3px; 
+            background-color: white; 
+            position: absolute; 
+            border-radius: 50%; 
+            opacity: 0.2; 
+            animation: twinkle 2s infinite; 
+            -webkit-animation: twinkle 2s infinite; 
+        } 
+        @keyframes twinkle{ 
+            50%{ 
+                opacity: 1; 
+                transform: scale(1.2); 
+            } 
+        } 
+        @-webkit-keyframes twinkle{
+        50%{ 
+                opacity: 1; 
+                -webkit-transform: scale(1.2); 
+            } 
+        } 
+        .s1{ 
+            top:80px; 
+            right: 300px; 
+        } 
+        .s2{ 
+            top:200px; 
+            left: 200px; 
+            animation-delay: 0.5s; 
+            -webkit-animation-delay: 0.5s; 
+        } 
+        .s3{ 
+            right:120px; 
+            top:150px; 
+            animation-delay: 0.8s; 
+            -webkit-animation-delay: 0.8s; 
+        } 
+        .s4{ 
+            left:180px; 
+            top:50px; 
+            animation-delay: 0.2s; 
+            -webkit-animation-delay: 0.2s; 
+        } 
+        .s5{ 
+            right:890px; 
+            top:110px; 
+            animation-delay: 0.9s; 
+            -webkit-animation-delay: 0.9s; 
+        } 
+        .s6{ 
+            left:700px; 
+            top:160px; 
+            animation-delay: 0.35s; 
+            -webkit-animation-delay: 0.35s; 
+        } 
+        .s7{ 
+            right:500px; 
+            top:30px; 
+            animation-delay: 0.1s; 
+            -webkit-animation-delay: 0.1s; 
+        } 
+        .shooting{ 
+            height: 3px; 
+            width: 40px; 
+            background-color: white; 
+            transform: rotate(-45deg); 
+            -webkit-transform: rotate(-45deg); 
+            position: absolute; 
+            right: 200px; 
+            opacity: 0.2; 
+            animation: shoot 5s infinite linear; 
+            -webkit-animation: shoot 5s infinite linear; 
+        } 
+        @keyframes shoot{ 
+            10%{ 
+                transform:rotate(-46deg) translate(-550px ,0px); 
+            } 
+            100%{ 
+                transform:rotate(-46deg) translate(-550px ,0px); 
+            } 
+ 
+        } 
+        @-webkit-keyframes shoot{ 
+            10%{ 
+                -webkit-transform:rotate(-46deg) translate(-550px ,0px); 
+            } 
+            100%{ 
+                -webkit-transform:rotate(-46deg) translate(-550px ,0px); 
+            } 
+ 
+        }
+
+#sea
+{
+    position:absolute ;
+    top:78%;
+    height:21%;
+    width:99%;
+    background-color:#090B39;
+}
+
+
+#wave1{
+    position:absolute ;
+    left:5%;
+    top:75%;
+    height:10%;
+    width:55%;
+    border-radius:50%;
+    background-color:;
+    animation: ddr 2s  infinite;
+    animation-direction:alternate-reverse;
+
+}
+@keyframes ddr {
+  0%
+  {
+      transform: translate(20%);
+  }
+  100%
+  {
+      transform: translate(-5%);
+  }
+  
+}
+
+
+    
+#wave3{
+    position:absolute ;
+    left:50%;
+    top:74%;
+    height:10%;
+    width:45%;
+    border-radius:50%;
+    background-color:#080A39;
+    
+animation: ddr1 0.5s  infinite ;
+animation-direction:alternate-reverse;
+
+}
+@keyframes ddr1 {
+  0%
+  {
+      transform: translate(11%);
+  }
+  100%
+  {
+      transform: translate(-11%);
+  }
+  
+}
+
+
+#wave2{
+    position:absolute ;
+    left:25%;
+    top:73%;
+    height:10%;
+    width:50%;
+    border-radius:50%;
+    background-color:#080A39;
+    
+    animation: ddr2 1s infinite ;
+    animation-direction:alternate-reverse;
+
+}
+@keyframes ddr2 {
+  0%
+  {
+      transform: translate(-12%);
+  }
+  100%
+  {
+      transform: translate(12%);
+  }
+  
+}
+
+
+#wave5{
+    position:absolute ;
+    left:1%;
+    top:73%;
+    height:9%;
+    width:30%;
+    border-radius:50%;
+    background-color:#080A39;
+    
+    }
+    
+    #wave6{
+    position:absolute ;
+    right:1%;
+    top:73%;
+    height:9%;
+    width:25%;
+    border-radius:50%;
+    background-color:#080A39;
+    }
+    .animated{
+  position:absolute;
+    font-size:14px;
+    color:white;
+    top:20%;
+    right:20%;
+    animation:backInDown 20s ease-in-out;
+    
+}
+
+@keyframes backInDown {
+    0% {
+        transform: translateY(-1200px) scale(.7);
+        opacity: .7
+    }
+
+    80% {
+        transform: translateY(0) scale(.7);
+        opacity: .7
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1
+    }
+}
+
+.t1{
+  position:absolute;
+    font-size:14px;
+    color:white;
+    top:25%;
+    right:20%;
+    animation:backInDown 50s ease-in-out;
+    
+}
+
+@keyframes backInDown {
+    0% {
+        transform: translateY(-1200px) scale(.7);
+        opacity: .7
+    }
+
+    80% {
+        transform: translateY(0) scale(.7);
+        opacity: .7
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1
+    }
+}
+.t2{
+  position:absolute;
+    font-size:14px;
+    color:white;
+    top:30%;
+    right:20%;
+    animation:backInDown 90s ease-in-out;
+    
+}
+
+@keyframes backInDown {
+    0% {
+        transform: translateY(-1200px) scale(.7);
+        opacity: .7
+    }
+
+    80% {
+        transform: translateY(0) scale(.7);
+        opacity: .7
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1
+    }
+}
+.t3{
+  position:absolute;
+    font-size:14px;
+    color:white;
+    top:35%;
+    right:20%;
+    animation:backInDown 130s ease-in-out;
+    
+}
+
+@keyframes backInDown {
+    0% {
+        transform: translateY(-1200px) scale(.7);
+        opacity: .7
+    }
+
+    80% {
+        transform: translateY(0) scale(.7);
+        opacity: .7
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1
+    }
+}
+.t4{
+  position:absolute;
+    font-size:14px;
+    color:white;
+    top:40%;
+    right:20%;
+    animation:backInDown 160s ease-in-out;
+    
+}
+
+@keyframes backInDown {
+    0% {
+        transform: translateY(-1200px) scale(.7);
+        opacity: .7
+    }
+
+    80% {
+        transform: translateY(0) scale(.7);
+        opacity: .7
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1
+    }
+}
+    .tampil {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.7);
+}
+.tampil-body {
+	display: flex;
+	height: 100vh;
+	width: 100%;
+	text-align: center;
+	justify-content: center;
+}
+
+.tampil-body div {
+	border-radius: 20px;
+	padding: 20px;
+	margin: auto;
+	width: 50%;
+	background-color: white;
+}
+.tampil-body button {
+	cursor: pointer;
+	font-size: 1.1em;
+	text-align: center;
+	border-radius: 20px;
+	background-color: #4070f4;
+	border: 0;
+	margin-top: 20px;
+
+	color: white;
+	padding: 10px;
+}
+
+
+            
+     </style>
+ </head>
+ <body>
+ 	<div class="tampil" id="tampil">
+		<div class="tampil-body">
+			<div>
+				<h1>Hello!</h1>
+				<p>Click button dibawah yaa</p>
+				<button onclick=" putarmusic()">NEXT</button>
+			</div>
+		</div>
+	</div>
+ 	<script>
+		var a = document.getElementById('tampil');
+		function putarmusic(){
+			a.style.display = "none";
+			var audio = new Audio('audio.mp3');
+			audio.play();
+		}
+
+// <![CDATA[
+var bits=80; // how many bits
+var speed=60; // how fast - smaller is faster
+var bangs=1; // how many can be launched simultaneously (note that using too many can slow the script down)
+var colours=new Array("#03f", "#f03", "#0e0", "#93f", "#0cf", "#f93", "#f0c"); 
+//                     blue    red     green   purple  cyan    orange  pink
+
+
+var bangheight=new Array();
+var intensity=new Array();
+var colour=new Array();
+var Xpos=new Array();
+var Ypos=new Array();
+var dX=new Array();
+var dY=new Array();
+var stars=new Array();
+var decay=new Array();
+var swide=800;
+var shigh=600;
+var boddie;
+
+if (typeof('addRVLoadEvent')!='function') function addRVLoadEvent(funky) {
+  var oldonload=window.onload;
+  if (typeof(oldonload)!='function') window.onload=funky;
+  else window.onload=function() {
+    if (oldonload) oldonload();
+    funky();
+  }
+}
+
+addRVLoadEvent(light_blue_touchpaper);
+
+function light_blue_touchpaper() { if (document.getElementById) {
+  var i;
+  boddie=document.createElement("div");
+  boddie.style.position="fixed";
+  boddie.style.top="0px";
+  boddie.style.left="0px";
+  boddie.style.overflow="visible";
+  boddie.style.width="1px";
+  boddie.style.height="1px";
+  boddie.style.backgroundColor="transparent";
+  document.body.appendChild(boddie);
+  set_width();
+  for (i=0; i<bangs; i++) {
+    write_fire(i);
+    launch(i);
+    setInterval('stepthrough('+i+')', speed);
+  }
+}}
+
+function write_fire(N) {
+  var i, rlef, rdow;
+  stars[N+'r']=createDiv('|', 12);
+  boddie.appendChild(stars[N+'r']);
+  for (i=bits*N; i<bits+bits*N; i++) {
+    stars[i]=createDiv('*', 13);
+    boddie.appendChild(stars[i]);
+  }
+}
+
+function createDiv(char, size) {
+  var div=document.createElement("div");
+  div.style.font=size+"px monospace";
+  div.style.position="absolute";
+  div.style.backgroundColor="transparent";
+  div.appendChild(document.createTextNode(char));
+  return (div);
+}
+
+function launch(N) {
+  colour[N]=Math.floor(Math.random()*colours.length);
+  Xpos[N+"r"]=swide*0.5;
+  Ypos[N+"r"]=shigh-5;
+  bangheight[N]=Math.round((0.5+Math.random())*shigh*0.4);
+  dX[N+"r"]=(Math.random()-0.5)*swide/bangheight[N];
+  if (dX[N+"r"]>1.25) stars[N+"r"].firstChild.nodeValue="/";
+  else if (dX[N+"r"]<-1.25) stars[N+"r"].firstChild.nodeValue="\\";
+  else stars[N+"r"].firstChild.nodeValue="|";
+  stars[N+"r"].style.color=colours[colour[N]];
+}
+
+function bang(N) {
+  var i, Z, A=0;
+  for (i=bits*N; i<bits+bits*N; i++) { 
+    Z=stars[i].style;
+    Z.left=Xpos[i]+"px";
+    Z.top=Ypos[i]+"px";
+    if (decay[i]) decay[i]--;
+    else A++;
+    if (decay[i]==15) Z.fontSize="7px";
+    else if (decay[i]==7) Z.fontSize="2px";
+    else if (decay[i]==1) Z.visibility="hidden";
+    if (decay[i]>1 && Math.random()<.1) {
+       Z.visibility="hidden";
+       setTimeout('stars['+i+'].style.visibility="visible"', speed-1);
+    }
+    Xpos[i]+=dX[i];
+    Ypos[i]+=(dY[i]+=1.25/intensity[N]);
+
+  }
+  if (A!=bits) setTimeout("bang("+N+")", speed);
+}
+
+function stepthrough(N) { 
+  var i, M, Z;
+  var oldx=Xpos[N+"r"];
+  var oldy=Ypos[N+"r"];
+  Xpos[N+"r"]+=dX[N+"r"];
+  Ypos[N+"r"]-=4;
+  if (Ypos[N+"r"]<bangheight[N]) {
+    M=Math.floor(Math.random()*3*colours.length);
+    intensity[N]=5+Math.random()*4;
+    for (i=N*bits; i<bits+bits*N; i++) {
+      Xpos[i]=Xpos[N+"r"];
+      Ypos[i]=Ypos[N+"r"];
+      dY[i]=(Math.random()-0.5)*intensity[N];
+      dX[i]=(Math.random()-0.5)*(intensity[N]-Math.abs(dY[i]))*1.25;
+      decay[i]=16+Math.floor(Math.random()*16);
+      Z=stars[i];
+      if (M<colours.length) Z.style.color=colours[i%2?colour[N]:M];
+      else if (M<2*colours.length) Z.style.color=colours[colour[N]];
+      else Z.style.color=colours[i%colours.length];
+      Z.style.fontSize="13px";
+      Z.style.visibility="visible";
+    }
+    bang(N);
+    launch(N);
+  }
+  stars[N+"r"].style.left=oldx+"px";
+  stars[N+"r"].style.top=oldy+"px";
+} 
+
+window.onresize=set_width;
+function set_width() {
+  var sw_min=999999;
+  var sh_min=999999;
+  if (document.documentElement && document.documentElement.clientWidth) {
+    if (document.documentElement.clientWidth>0) sw_min=document.documentElement.clientWidth;
+    if (document.documentElement.clientHeight>0) sh_min=document.documentElement.clientHeight;
+  }
+  if (typeof(self.innerWidth)!="undefined" && self.innerWidth) {
+    if (self.innerWidth>0 && self.innerWidth<sw_min) sw_min=self.innerWidth;
+    if (self.innerHeight>0 && self.innerHeight<sh_min) sh_min=self.innerHeight;
+  }
+  if (document.body.clientWidth) {
+    if (document.body.clientWidth>0 && document.body.clientWidth<sw_min) sw_min=document.body.clientWidth;
+    if (document.body.clientHeight>0 && document.body.clientHeight<sh_min) sh_min=document.body.clientHeight;
+  }
+  if (sw_min==999999 || sh_min==999999) {
+    sw_min=800;
+    sh_min=600;
+  }
+  swide=sw_min;
+  shigh=sh_min;
+}
+// ]]>
+</script>
+
+    <div class="moon"></div>
+        <div class="star s1"></div> 
+        <div class="star s2"></div> 
+        <div class="star s3"></div> 
+        <div class="star s4"></div> 
+        <div class="star s5"></div> 
+        <div class="star s6"></div> 
+        <div class="star s7"></div>
+        <div class="shooting"></div>
+    <div id="sea"></div>
+            <div id ="wave1"></div>
+            <div id ="wave3"></div>
+            <div id ="wave2"></div>
+            <div id ="wave5"></div>
+            <div id ="wave6"></div>
+             <div class="animated">Hello!</div>
+             <div class="t1">I'm Faiza</div>
+             <div class="t2">Nice to meet you!</div>
+             <div class="t3">Can be we friend?</div>
+             <div class="t4"><3</div>
+        
+            
+ 
+ </body>
+ </html>          
+
